@@ -1,0 +1,19 @@
+/** File that describes the dependecies of our site (package names and verstion constraints **/
+/** phpunit path needs to be confirmed**/
+
+{
+  "require": {
+    "php": "*",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ramsey/uuid": "@stable",
+    "phpunit/dbunit": "@stable",
+    "phpunit/phpunit": "@stable",
+    "lcobucci/jwt": "3.2",
+    "swiftmailer/swiftmailer": "@stable",
+    "phpseclib/phpseclib": "2.0.11"
+  },
+  "scripts": {
+    "phpunit": "./vendor/bin/phpunit -c ./php/Classes/Tests/ --coverage-html coverage"
+  }
+}
